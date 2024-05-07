@@ -31,9 +31,9 @@ def get_subtitles(session, title, year, max_subtitles):
     download_link = get_download_link(session, subtitle_url)
     if download_link:
       subtitles.append({
-          'url':
+          'file':
           download_link,
-          'lang':
+          'label':
           f'{subtitle_name} {len(subtitles) + 1}'
       })
   return subtitles
@@ -68,15 +68,15 @@ def get_subtitles_tv(session, season, episode, title, year, max_subtitles):
           download_link = get_download_link(session, subtitle_url)
           if download_link:
               subtitles.append({
-                  'url': download_link,
-                  'lang': f'{subtitle_name} {len(subtitles) + 1}'
+                  'file': download_link,
+                  'label': f'{subtitle_name} {len(subtitles) + 1}'
               })
   else:
       download_link = get_download_link(session, url)
       if download_link:
           subtitles.append({
-              'url': download_link,
-              'lang': f'{subtitle_name} {len(subtitles) + 1}'
+              'file': download_link,
+              'label': f'{subtitle_name} {len(subtitles) + 1}'
           })
   return subtitles
 
