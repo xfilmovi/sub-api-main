@@ -1,3 +1,3 @@
-language_code = "scc,bos,hrv"
+language_code = "hrv"
 subtitles_number = 10
 subtitle_name = "Srpski"
