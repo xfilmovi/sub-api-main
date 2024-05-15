@@ -1,3 +1,3 @@
-language_code = "hrv"
-subtitles_number = 10
-subtitle_name = "Srpski"
+language_code = "eng"
+subtitles_number = 3
+subtitle_name = "Engleski"
